@@ -1,54 +1,31 @@
-import React, {Component} from "react";
+import React from "react";
 import './sideBar.css';
 import Context from "../context/context";
-import {Link} from "react-router-dom";
+import HeaderList from "../../layout/header/components/headerList";
 
-export default class SideBar extends Component {
+const SideBar = ({ linksData, menuState }) => {
+  const linksClassData = {
+    classList: 'sidebar-list',
+    classListItem: 'sidebar-list-item'
+  };
+  let classSidebar = "sidebar";
 
+  if (menuState) {
+    classSidebar = classSidebar + ' active';
+  }
 
-    render() {
-
-        const {menuState} = this.props;
-        let classSidebar = "sidebar";
-
-        if (menuState) {
-            classSidebar = classSidebar + ' active';
-        }
-
-        return (
-            <div className={classSidebar}>
-                <div className="sidebar-cross"
-                     onClick={this.context}>
-                    <span/>
-                    <span/>
-                </div>
-                <ul className="sidebar-list"
-                    onClick={this.context}>
-                    <li className="sidebar-list-item">
-                        <Link to="/aboutme">About me</Link>
-                    </li>
-                    <li className="sidebar-list-item">
-                        <Link to="/education">Education</Link>
-                    </li>
-                    <li className="sidebar-list-item">
-                        <Link to="/skills">Skills</Link>
-                    </li>
-                    <li className="sidebar-list-item">
-                        <Link to="/randomThings">Random things</Link>
-                    </li>
-                    <li className="sidebar-list-item">
-                        <Link to="/contacts">Contacts</Link>
-                    </li>
-                    <li className="sidebar-list-item">
-                        <a href="https://www.instagram.com/antokhamomot"
-                           target="_blank">
-                            My life
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        )
-    }
+  return (
+    <div className={classSidebar}>
+      <div className="sidebar-cross">
+        <span/>
+        <span/>
+      </div>
+      <HeaderList
+        linksData={linksData}
+        linksClassData={linksClassData}/>
+    </div>
+  )
 }
 
-SideBar.contextType = Context;
+// SideBar.contextType = Context;
+export default SideBar;

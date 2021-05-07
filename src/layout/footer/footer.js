@@ -1,9 +1,9 @@
 import React from "react";
 import './footer.css';
 
-import facebook from "../../img/icons/facebook-circular-logo.svg";
-import instagram from "../../img/icons/instagram.svg";
-import phone from "../../img/icons/telegram-logo.svg";
+import facebook from "../../assets/img/icons/facebook-circular-logo.svg";
+import instagram from "../../assets/img/icons/instagram.svg";
+import phone from "../../assets/img/icons/telegram-logo.svg";
 
 const Footer = () => {
 

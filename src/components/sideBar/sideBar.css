@@ -31,23 +31,6 @@
 .sidebar-cross span:nth-child(2) {
   transform: rotate(45deg);
 }
-.sidebar-list {
-  text-align: center;
-  padding: 0;
-  list-style-type: none;
-}
-.sidebar-list-item {
-  margin-top: 10px;
-}
-.sidebar-list-item a {
-  color: rgba(255, 255, 255, 0.9);
-  font-family: "Perpetua Titling", sans-serif;
-  font-size: 32px;
-}
-.sidebar-list-item a:hover {
-  color: white;
-  text-decoration: none;
-}
 
 .active {
   left: 0;

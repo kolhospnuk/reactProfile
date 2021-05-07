@@ -31,25 +31,7 @@
       }
     }
   }
-  &-list {
-    text-align: center;
-    padding: 0;
-    list-style-type: none;
-    &-item {
-      margin-top: 10px;
-      a {
-        color: rgba(256, 256, 256, .9);
-        font-family: "Perpetua Titling", sans-serif;
-        font-size: 32px;
-        &:hover {
-          color: rgb(256, 256, 256);
-          text-decoration: none;
-        }
-      }
-    }
-  }
 }
-
 
 .active {
   left: 0;

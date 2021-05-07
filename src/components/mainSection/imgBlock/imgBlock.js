@@ -1,7 +1,7 @@
 
 import React from "react";
 import "./imgBlock.css";
-import logo from '../../../img/OnixFoto.jpg';
+import logo from '../../../assets/img/OnixFoto.jpg';
 import Context from "../../context/context";
 
 const ImgBlock = () => {

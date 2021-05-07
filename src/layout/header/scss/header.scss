@@ -1,0 +1,41 @@
+
+.header {
+  height: 100px;
+  background-color: #00838e;
+  color: rgba(256, 256, 256, .8);
+  border-bottom: #003b40 solid 3px;
+  &-line {
+    height: 12px;
+    background-color: #003b40;
+  }
+}
+
+@media (max-width: 1200px) {
+  .header-content-btn {
+    margin-right: 140px;
+  }
+}
+
+@media (max-width: 992px) {
+  .header-content-btn {
+    font-size: 25px;
+    margin: 15px 85px 20px 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    &-line {
+      height: 7px;
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .header {
+    height: 70px;
+    &-line {
+      height: 5px;
+    }
+  }
+}
